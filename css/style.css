@@ -1,0 +1,165 @@
+/*CSS RESET*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*BODY*/
+body {
+    background: linear-gradient(to top, rgb(0,45,73) 0%, rgb(0,42,66) 100%);
+    font-family: 'Lato', sans-serif;
+}
+
+/*UTILITIES*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*TITOLO DELLA PAGINA*/
+.main-title {
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px 0;
+}
+
+/*LISTA DEI POST*/
+.posts-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*SINGOLO POST*/
+.post {
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 25px; 
+}
+
+/*______________________________*/
+/*HEADER DEL POST*/
+.post__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-basis: 15%;
+    padding-top: 15px;
+}
+
+/*CONTENUTI DELL'HEADER*/
+.post-meta {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*IMMAGINE NELL'HEADER DEL POST*/
+.post-meta__icon {
+    flex-basis: 10%;
+}
+
+.post-meta__icon img {
+    border-radius: 50%;
+}
+
+/*NOME E DATA NELL'HEADER DEL POST*/
+.post-meta__data {
+    width: 100%;
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+.post-meta__author {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.post-meta__time {
+    font-size: 13px;
+}
+
+/*______________________________*/
+/*CONTENUTO DEL POST*/
+.post-content {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.post__text {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+}
+
+/*______________________________*/
+/*IMMAGINE DEL POST*/
+.post-image-area {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.post__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+/*______________________________*/
+/*FOOTER DEL POST*/
+.post__footer {
+    flex-basis: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.likes {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*STILE DEI BOTTONI*/
+.js-like-button {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.like-button--liked {
+    color: green;
+    font-weight: bold;
+}
